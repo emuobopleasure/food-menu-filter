@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Categories = ({categories, filterMenuItems, activeMenu}) => {
-    console.log('sctive', activeMenu)
+    console.log('active', activeMenu)
   return (
     <div className='buttons-container flex justify-around md:justify-center md:gap-10 mt-6'>
         {
