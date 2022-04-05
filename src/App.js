@@ -47,6 +47,7 @@ function App() {
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
           categories={categories}
+          setCategories={setCategories}
           filterMenuItems={filterMenuItems}
         />
         <Menu
