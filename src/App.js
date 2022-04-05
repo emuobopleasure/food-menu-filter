@@ -13,31 +13,28 @@ function App() {
   const [categories, setCategories] = useState(allCategories)
 
   const [activeMenu, setActiveMenu] = useState(false)
+
   const filterMenuItems = (category, index) => {
     setActiveMenu(true)
     console.log('act', activeMenu)
 
     console.log(index)
-    if (category === 'Lunch') {
-      setActiveMenu({...activeMenu, [index]: true})
-      console.log(activeMenu)
-      setMenuItems(data)
-      // setActiveMenu({...activeMenu, [index]: !activeMenu[index]})
-      return
-    }
+    // if (category === 'Lunch') {
+    //   console.log(activeMenu)
+    //   setMenuItems(data)
+    //   setActiveMenu({...activeMenu, [index]: true})
+    //   // setActiveMenu({...activeMenu, [index]: !activeMenu[index]})
+    //   return
+    // }
     if (category === 'All') {
-      setActiveMenu({...activeMenu, [index]: true})
+      // setActiveMenu({...activeMenu, [index]: true})
       setMenuItems(data)
       // setActiveMenu({...activeMenu, [index]: !activeMenu[index]})
       return
     }
-
-    
-    
-    
-
     const newItems = data.filter((item) => item.category === category)
     setMenuItems(newItems)
+
   }
   return (
     <main className="app px-14 md:px-24 mt-4">

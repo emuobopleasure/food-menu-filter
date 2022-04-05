@@ -10,7 +10,7 @@ const Menu = ({menuItems}) => {
                 <article className='menu-article flex flex-col gap-5 mb-6 md:max-w-[40rem] md:flex-row'
                 key={item.id}
                 >
-                    <img src={item.img} 
+                    <img src={item.img} alt='food-menu'
                         className='h-[200px] w-full object-cover border-[0.25rem] border-[#c59d5f] rounded md:h-[150px] md:w-[15rem] md:basis-[40%] transform transition duration-300 hover:scale-110'
                     />
                     <div className='item-info md:basis-[60%]'>
